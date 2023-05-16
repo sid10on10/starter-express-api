@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 
-const express = require('express')
 const request = require('request')
 
 app.use((req, res, next) => {
