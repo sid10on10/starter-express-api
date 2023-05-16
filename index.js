@@ -8,6 +8,11 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
   next()
 })
+
+app.get('/', (req, res)=>{
+    res.send('Hello World')
+})
+
 app.get('/cors', (req, res) => {
   request(
     { url: 'https://www.essentiallysports.com/feed/' },
